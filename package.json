@@ -1,0 +1,32 @@
+{
+  "private": true,
+  "name": "babel-plugin-module-resolver-ava-test-case",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "test": "ava test/**/**.spec.js --no-cache",
+    "start": "node bin/index.js"
+  },
+  "keywords": [],
+  "author": "MethodGrab",
+  "license": "ISC",
+  "dependencies": {
+    "babel-plugin-module-resolver": "^2.2.0",
+    "babel-polyfill": "^6.16.0",
+    "babel-preset-es2015": "^6.16.0",
+    "babel-preset-stage-2": "^6.17.0",
+    "babel-register": "^6.16.3"
+  },
+  "devDependencies": {
+    "ava": "^0.16.0"
+  },
+  "ava": {
+    "require": [
+      "babel-register",
+      "babel-polyfill"
+    ],
+    "babel": "inherit",
+    "verbose": true,
+    "noCache": true
+  }
+}
